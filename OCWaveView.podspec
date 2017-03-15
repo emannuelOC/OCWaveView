@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/emannuelOC/OCWaveView.git", :tag => "0.0.1" }
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
+  s.source_files  = "OCWaveView", "Classes/**/*.{h,m,swift}"
   # s.resource  = "icon.png"
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
