@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OCWaveView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "🌊 A UIView subclass to present visual feedback for audio input"
 
   s.description  = "OCWaveView is a UIView subclass that can present visual feedback for audio input."
