@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class SoundView: UIView {
+class WaveView: UIView {
     
     @IBInspectable var color1: UIColor = #colorLiteral(red: 0.9964973922, green: 1, blue: 0.9946105148, alpha: 0.7882063356)
     @IBInspectable var color2: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 0.6632598459)
