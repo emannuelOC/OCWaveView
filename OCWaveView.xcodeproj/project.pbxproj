@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9E599E71E79FCDE00F84749 /* OCWaveView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E599DD1E79FCDE00F84749 /* OCWaveView.framework */; };
+		C9E599EC1E79FCDE00F84749 /* OCWaveViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E599EB1E79FCDE00F84749 /* OCWaveViewTests.swift */; };
+		C9E599EE1E79FCDE00F84749 /* OCWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E599E01E79FCDE00F84749 /* OCWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9E599FA1E79FD6800F84749 /* OCWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E599F91E79FD6800F84749 /* OCWaveView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9E599E81E79FCDE00F84749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E599D41E79FCDE00F84749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E599DC1E79FCDE00F84749;
+			remoteInfo = OCWaveView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9E599DD1E79FCDE00F84749 /* OCWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E599E01E79FCDE00F84749 /* OCWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCWaveView.h; sourceTree = "<group>"; };
+		C9E599E11E79FCDE00F84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E599E61E79FCDE00F84749 /* OCWaveViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCWaveViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E599EB1E79FCDE00F84749 /* OCWaveViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCWaveViewTests.swift; sourceTree = "<group>"; };
+		C9E599ED1E79FCDE00F84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E599F91E79FD6800F84749 /* OCWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCWaveView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9E599D91E79FCDE00F84749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E599E31E79FCDE00F84749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E599E71E79FCDE00F84749 /* OCWaveView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9E599D31E79FCDE00F84749 = {
+			isa = PBXGroup;
+			children = (
+				C9E599DF1E79FCDE00F84749 /* OCWaveView */,
+				C9E599EA1E79FCDE00F84749 /* OCWaveViewTests */,
+				C9E599DE1E79FCDE00F84749 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9E599DE1E79FCDE00F84749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9E599DD1E79FCDE00F84749 /* OCWaveView.framework */,
+				C9E599E61E79FCDE00F84749 /* OCWaveViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9E599DF1E79FCDE00F84749 /* OCWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				C9E599F91E79FD6800F84749 /* OCWaveView.swift */,
+				C9E599E01E79FCDE00F84749 /* OCWaveView.h */,
+				C9E599E11E79FCDE00F84749 /* Info.plist */,
+			);
+			path = OCWaveView;
+			sourceTree = "<group>";
+		};
+		C9E599EA1E79FCDE00F84749 /* OCWaveViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9E599EB1E79FCDE00F84749 /* OCWaveViewTests.swift */,
+				C9E599ED1E79FCDE00F84749 /* Info.plist */,
+			);
+			path = OCWaveViewTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9E599DA1E79FCDE00F84749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E599EE1E79FCDE00F84749 /* OCWaveView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9E599DC1E79FCDE00F84749 /* OCWaveView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E599F11E79FCDE00F84749 /* Build configuration list for PBXNativeTarget "OCWaveView" */;
+			buildPhases = (
+				C9E599D81E79FCDE00F84749 /* Sources */,
+				C9E599D91E79FCDE00F84749 /* Frameworks */,
+				C9E599DA1E79FCDE00F84749 /* Headers */,
+				C9E599DB1E79FCDE00F84749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCWaveView;
+			productName = OCWaveView;
+			productReference = C9E599DD1E79FCDE00F84749 /* OCWaveView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9E599E51E79FCDE00F84749 /* OCWaveViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E599F41E79FCDE00F84749 /* Build configuration list for PBXNativeTarget "OCWaveViewTests" */;
+			buildPhases = (
+				C9E599E21E79FCDE00F84749 /* Sources */,
+				C9E599E31E79FCDE00F84749 /* Frameworks */,
+				C9E599E41E79FCDE00F84749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9E599E91E79FCDE00F84749 /* PBXTargetDependency */,
+			);
+			name = OCWaveViewTests;
+			productName = OCWaveViewTests;
+			productReference = C9E599E61E79FCDE00F84749 /* OCWaveViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9E599D41E79FCDE00F84749 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = OC;
+				TargetAttributes = {
+					C9E599DC1E79FCDE00F84749 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KKKTBJ9APM;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					C9E599E51E79FCDE00F84749 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KKKTBJ9APM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C9E599D71E79FCDE00F84749 /* Build configuration list for PBXProject "OCWaveView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9E599D31E79FCDE00F84749;
+			productRefGroup = C9E599DE1E79FCDE00F84749 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E599DC1E79FCDE00F84749 /* OCWaveView */,
+				C9E599E51E79FCDE00F84749 /* OCWaveViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9E599DB1E79FCDE00F84749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E599E41E79FCDE00F84749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9E599D81E79FCDE00F84749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E599FA1E79FD6800F84749 /* OCWaveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E599E21E79FCDE00F84749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E599EC1E79FCDE00F84749 /* OCWaveViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9E599E91E79FCDE00F84749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E599DC1E79FCDE00F84749 /* OCWaveView */;
+			targetProxy = C9E599E81E79FCDE00F84749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C9E599EF1E79FCDE00F84749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9E599F01E79FCDE00F84749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9E599F21E79FCDE00F84749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KKKTBJ9APM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OCWaveView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oc.OCWaveView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9E599F31E79FCDE00F84749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KKKTBJ9APM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OCWaveView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oc.OCWaveView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C9E599F51E79FCDE00F84749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KKKTBJ9APM;
+				INFOPLIST_FILE = OCWaveViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oc.OCWaveViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C9E599F61E79FCDE00F84749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KKKTBJ9APM;
+				INFOPLIST_FILE = OCWaveViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oc.OCWaveViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9E599D71E79FCDE00F84749 /* Build configuration list for PBXProject "OCWaveView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E599EF1E79FCDE00F84749 /* Debug */,
+				C9E599F01E79FCDE00F84749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E599F11E79FCDE00F84749 /* Build configuration list for PBXNativeTarget "OCWaveView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E599F21E79FCDE00F84749 /* Debug */,
+				C9E599F31E79FCDE00F84749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9E599F41E79FCDE00F84749 /* Build configuration list for PBXNativeTarget "OCWaveViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E599F51E79FCDE00F84749 /* Debug */,
+				C9E599F61E79FCDE00F84749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9E599D41E79FCDE00F84749 /* Project object */;
+}
