@@ -24,7 +24,7 @@ It is inspired in Siri's wave form for audio input.
 
 Create a `WaveView` and add it as a subview anywhere, customize it changing the `color1`, `color2` and `color3` properties and update it setting its `value` property based on the audio input.
 
-### Soryboard
+### Storyboard
 
 Drag a view into your scene and set its Class to be `WaveView` and the Module to `OCWaveView`. Then you can inspect the colors for each wave and the initial value.
 
