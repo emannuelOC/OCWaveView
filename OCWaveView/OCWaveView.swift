@@ -26,16 +26,16 @@ public class WaveView: UIView {
     private var spin1 = 0.1
     private var spin2 = 0.6
     private var spin3 = 0.1
-
+    
     private var signal1 = 1.0
     private var signal2 = 1.0
     private var signal3 = 1.0
     
     private func updateSpin() {
         
-        let factor1 = 0.065
+        let factor1 = 0.65
         let factor2 = 0.41
-        let factor3 = 0.07
+        let factor3 = 0.7
         
         if spin1 >= 1.0 {
             signal1 = -1.0
@@ -61,10 +61,21 @@ public class WaveView: UIView {
     }
     
     
+    
+    
+    var s = 0.0
+    
     override public func draw(_ rect: CGRect) {
-        let height = frame.height/2
-        let bowlSenoid = BowlSenoid(center: Double(frame.width)/2.0)
         
+        let height = frame.height/2
+        
+        let bowlSenoid = BowlSenoid(center: Double(frame.width)/2.0)
+        bowlSenoid.s = s
+        bowlSenoid.s += 0.5
+        if bowlSenoid.s >= Double(frame.width) {
+            bowlSenoid.s = 0.0
+        }
+        s = bowlSenoid.s
         
         var points = [CGPoint]()
         var mirrorPoints = [CGPoint]()
@@ -96,10 +107,10 @@ public class WaveView: UIView {
             for x in 0...Int(frame.width/size) {
                 let newX = CGFloat(x) * size
                 
-                let y = height + value * CGFloat(bowlSenoid.f(weight * newX)) * 0.000002
+                let y = height + value * CGFloat(bowlSenoid.f(newX)) * 0.000002
                 let point = CGPoint(x: newX, y: y)
                 
-                let mirrorY = height - value * CGFloat(bowlSenoid.f(weight * newX)) * 0.000002
+                let mirrorY = height - value * CGFloat(bowlSenoid.f(newX)) * 0.000002
                 let mirror = CGPoint(x: newX, y: mirrorY)
                 
                 points += [point]
@@ -115,11 +126,11 @@ public class WaveView: UIView {
             path2.addLine(to: CGPoint(x: 0, y: frame.height/2))
             
             color.set()
-            path1.lineWidth = 0
-            path1.stroke()
+            path1.lineWidth = 1
+            //            path1.stroke()
             path1.fill()
-            path2.lineWidth = 0
-            path2.stroke()
+            path2.lineWidth = 1
+            //            path2.stroke()
             path2.fill()
             
         }
@@ -132,8 +143,11 @@ public class BowlSenoid {
     
     var center: Double
     
+    var s = 0.0
+    
     private func senoid(_ x: Double) -> Double {
-        return sin(x)
+        print(s)
+        return sin(s + x)
     }
     
     private func bowl(_ x: Double, center: Double = 0) -> Double {
