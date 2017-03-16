@@ -23,22 +23,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBL-HD-Q5E" customClass="WaveView" customModule="OCWaveView">
                                 <rect key="frame" x="0.0" y="587" width="375" height="80"/>
-                                <color key="backgroundColor" red="0.2156862745" green="0.0" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Q5s-TG-gzU"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color1">
-                                        <color key="value" red="0.9098039269" green="0.4784313738" blue="0.64313727620000005" alpha="0.66325984589999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.28235294119999998" green="0.2123688343" blue="0.93333333330000001" alpha="0.63452482880000005" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color2">
                                         <color key="value" red="0.47450980539999998" green="0.8392156959" blue="0.97647058959999999" alpha="0.68988120720000001" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color3">
-                                        <color key="value" red="0.0" green="0.89529997110000004" blue="0.0" alpha="0.513671875" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.9098039269" green="0.4784313738" blue="0.64313727620000005" alpha="0.66325984589999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                        <real key="value" value="500"/>
+                                        <real key="value" value="398"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
