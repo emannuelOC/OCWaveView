@@ -3,9 +3,9 @@
 
 It is inspired in Siri's wave form for audio input.
 
-![silent image](https://github.com/emannuelOC/OCWaveView/blob/master/images/silent.png)
-![medium image](https://github.com/emannuelOC/OCWaveView/blob/master/images/medium.png)
-![loud image](https://github.com/emannuelOC/OCWaveView/blob/master/images/loud.png)
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/silent.png width="300">
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/medium.png width="300">
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/loud.png width="300">
 
 - [Requirements](#requirements)
 - [Usage](#usage)
