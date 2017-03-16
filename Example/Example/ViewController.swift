@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import OCWaveView
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-    }
+    @IBOutlet weak var waveView: WaveView!
 
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let value = touches.first?.location(in: view) {
+            waveView.value = value
+            
+        }
+    }
 
 }
 

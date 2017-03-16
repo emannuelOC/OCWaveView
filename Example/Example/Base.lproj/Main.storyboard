@@ -47,6 +47,9 @@
                             <constraint firstItem="KBL-HD-Q5E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tys-BR-KQs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="waveView" destination="KBL-HD-Q5E" id="RN7-Kd-GQf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

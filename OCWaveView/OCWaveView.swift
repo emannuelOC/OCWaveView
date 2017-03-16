@@ -9,29 +9,29 @@
 import UIKit
 
 @IBDesignable
-class WaveView: UIView {
+public class WaveView: UIView {
     
-    @IBInspectable var color1: UIColor = #colorLiteral(red: 0.9964973922, green: 1, blue: 0.9946105148, alpha: 0.7882063356)
-    @IBInspectable var color2: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 0.6632598459)
-    @IBInspectable var color3: UIColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 0.6898812072)
+    @IBInspectable public var color1: UIColor = #colorLiteral(red: 0.9964973922, green: 1, blue: 0.9946105148, alpha: 0.7882063356)
+    @IBInspectable public var color2: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 0.6632598459)
+    @IBInspectable public var color3: UIColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 0.6898812072)
     
     @IBInspectable
-    var value: CGFloat = 200 {
+    public var value: CGFloat = 200 {
         didSet {
             setNeedsDisplay()
         }
     }
     
     
-    var spin1 = 0.1
-    var spin2 = 0.6
-    var spin3 = 0.1
+    private var spin1 = 0.1
+    private var spin2 = 0.6
+    private var spin3 = 0.1
 
-    var signal1 = 1.0
-    var signal2 = 1.0
-    var signal3 = 1.0
+    private var signal1 = 1.0
+    private var signal2 = 1.0
+    private var signal3 = 1.0
     
-    func updateSpin() {
+    private func updateSpin() {
         
         let factor1 = 0.065
         let factor2 = 0.41
@@ -61,7 +61,7 @@ class WaveView: UIView {
     }
     
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         let height = frame.height/2
         let bowlSenoid = BowlSenoid(center: Double(frame.width)/2.0)
         
