@@ -37,6 +37,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="color3">
                                         <color key="value" red="0.0" green="0.89529997110000004" blue="0.0" alpha="0.513671875" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="500"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
