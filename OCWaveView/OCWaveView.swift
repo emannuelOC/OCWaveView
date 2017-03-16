@@ -61,8 +61,6 @@ public class WaveView: UIView {
     }
     
     
-    
-    
     var s = 0.0
     
     override public func draw(_ rect: CGRect) {
@@ -80,11 +78,8 @@ public class WaveView: UIView {
         var points = [CGPoint]()
         var mirrorPoints = [CGPoint]()
         
-        let weights = [1.2, 0.9, 1.1]
         let curveSizes = [20, 24, 25]
         let colors = [color1, color2, color3]
-        
-        
         
         for i in 0..<curveSizes.count {
             
@@ -98,8 +93,6 @@ public class WaveView: UIView {
             path2.move(to: CGPoint(x: 0, y: height))
             
             updateSpin()
-            let spin = [spin1, spin2, spin3][i]
-            let weight = CGFloat(weights[i]) * CGFloat(spin * 0.60)
             
             let size = CGFloat(curveSizes[i])
             let color = colors[i]
