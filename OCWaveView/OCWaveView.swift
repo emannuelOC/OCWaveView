@@ -146,7 +146,6 @@ public class BowlSenoid {
     var s = 0.0
     
     private func senoid(_ x: Double) -> Double {
-        print(s)
         return sin(s + x)
     }
     
