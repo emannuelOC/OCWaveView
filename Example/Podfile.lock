@@ -1,5 +1,5 @@
 PODS:
-  - OCWaveView (0.0.2)
+  - OCWaveView (0.0.3)
 
 DEPENDENCIES:
   - OCWaveView (from `https://github.com/emannuelOC/OCWaveView.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   OCWaveView:
-    :commit: 6c3b59f85e46b416b1e922650da68a24ff20586d
+    :commit: 1d0305d6c8fed21b936f750c90b60d071a7b0fd3
     :git: https://github.com/emannuelOC/OCWaveView.git
 
 SPEC CHECKSUMS:
-  OCWaveView: 275eb0a9eb09ae5fbe6272c88139c3635be3f748
+  OCWaveView: ecb20508d6133511a1445517ffe41a410e840e45
 
 PODFILE CHECKSUM: 523ccd3ccbf9e26ba4fd60c8d3effb2bc909fffa
 

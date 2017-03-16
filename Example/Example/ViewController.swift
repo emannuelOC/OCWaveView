@@ -14,9 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var waveView: WaveView!
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let value = touches.first?.location(in: view) {
+        if let value = touches.first?.location(in: view).x {
             waveView.value = value
-            
         }
     }
 
