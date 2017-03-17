@@ -3,11 +3,9 @@
 
 There are currently three different types of waveViews you can choose from: `WaveView`, `SimpleWaveView` and `BarsWaveView`.
 
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave_quiet.png width="300"> 
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave.png width="300"> 
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave_loud.png width="300">
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/simple_wave.png width="300"> 
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/bars_wave.png width="300">
+| <img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave_quiet.png width="300"> | <img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave.png width="300"> | <img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave_loud.png width="300"> |
+
+| <img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/simple_wave.png width="300"> | <img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/bars_wave.png width="300"> |
 
 - [Requirements](#requirements)
 - [Usage](#usage)
