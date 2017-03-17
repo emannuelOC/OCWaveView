@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90DE1851E7B968000A6D902 /* SimpleWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90DE1841E7B968000A6D902 /* SimpleWaveView.swift */; };
+		C98ACAFA1E7BA20B003AF458 /* BarsWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98ACAF91E7BA20B003AF458 /* BarsWaveView.swift */; };
 		C9E599E71E79FCDE00F84749 /* OCWaveView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E599DD1E79FCDE00F84749 /* OCWaveView.framework */; };
 		C9E599EC1E79FCDE00F84749 /* OCWaveViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E599EB1E79FCDE00F84749 /* OCWaveViewTests.swift */; };
 		C9E599EE1E79FCDE00F84749 /* OCWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E599E01E79FCDE00F84749 /* OCWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C90DE1841E7B968000A6D902 /* SimpleWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleWaveView.swift; sourceTree = "<group>"; };
+		C98ACAF91E7BA20B003AF458 /* BarsWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarsWaveView.swift; sourceTree = "<group>"; };
 		C9E599DD1E79FCDE00F84749 /* OCWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E599E01E79FCDE00F84749 /* OCWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCWaveView.h; sourceTree = "<group>"; };
 		C9E599E11E79FCDE00F84749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				C9E599F91E79FD6800F84749 /* OCWaveView.swift */,
 				C9E599E01E79FCDE00F84749 /* OCWaveView.h */,
 				C9E599E11E79FCDE00F84749 /* Info.plist */,
+				C90DE1841E7B968000A6D902 /* SimpleWaveView.swift */,
+				C98ACAF91E7BA20B003AF458 /* BarsWaveView.swift */,
 			);
 			path = OCWaveView;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E599FA1E79FD6800F84749 /* OCWaveView.swift in Sources */,
+				C90DE1851E7B968000A6D902 /* SimpleWaveView.swift in Sources */,
+				C98ACAFA1E7BA20B003AF458 /* BarsWaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +418,7 @@
 				C9E599F31E79FCDE00F84749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9E599F41E79FCDE00F84749 /* Build configuration list for PBXNativeTarget "OCWaveViewTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +427,7 @@
 				C9E599F61E79FCDE00F84749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
