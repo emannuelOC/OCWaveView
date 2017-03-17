@@ -11,10 +11,16 @@ import UIKit
 @IBDesignable
 public class BarsWaveView: UIView {
     
+    /// The color of the bars in the view
     @IBInspectable public var color: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+    
+    /// The width of each bar
     @IBInspectable public var lineWidth: CGFloat = 0.0
+    
+    /// The amplitude to multiply the size of the bars
     @IBInspectable public var amplitude: CGFloat = 0.0
     
+    /// The value to be used in the senoid function
     @IBInspectable
     public var value: CGFloat = 200 {
         didSet {

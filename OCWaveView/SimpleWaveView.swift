@@ -11,9 +11,13 @@ import UIKit
 @IBDesignable
 public class SimpleWaveView: UIView {
     
+    /// The color of the wave
     @IBInspectable public var color: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
+    
+    /// The width of the wave
     @IBInspectable public var lineWidth: CGFloat = 0.0
     
+    /// The value to be used in the senoid function
     @IBInspectable
     public var value: CGFloat = 200 {
         didSet {

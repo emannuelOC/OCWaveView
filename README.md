@@ -1,11 +1,13 @@
 # OCWaveView
 🌊 A UIView subclass to present visual feedback for audio input
 
-It is inspired in Siri's wave form for audio input.
+There are currently three different types of waveViews you can choose from: `WaveView`, `SimpleWaveView` and `BarsWaveView`.
 
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/silent_.png width="300">
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/medium_.png width="300">
-<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/loud_.png width="300">
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave_quiet.png width="300"> 
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave.png width="300"> 
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/siri_wave_loud.png width="300">
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/simple_wave.png width="300"> 
+<img src=https://github.com/emannuelOC/OCWaveView/blob/master/images/bars_wave.png width="300">
 
 - [Requirements](#requirements)
 - [Usage](#usage)
@@ -22,7 +24,7 @@ It is inspired in Siri's wave form for audio input.
 
 ### Code
 
-Create a `WaveView` and add it as a subview anywhere, customize it changing the `color1`, `color2` and `color3` properties and update it setting its `value` property based on the audio input.
+Create one of the Wave View (Wave, SimpleWave of Bars) and add it as a subview anywhere, customize it changing the colors and update it setting its `value` property based on the audio input.
 
 ### Storyboard
 
