@@ -1,5 +1,5 @@
 PODS:
-  - OCWaveView (0.1.1)
+  - OCWaveView (0.1.2)
 
 DEPENDENCIES:
   - OCWaveView (from `../`)
@@ -7,11 +7,10 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   OCWaveView:
     :path: "../"
-    :tag: 0.0.4
 
 SPEC CHECKSUMS:
-  OCWaveView: fd150f9578a050a568befe5e0f3b56ec7d6835d2
+  OCWaveView: d5f7061e98dfbe4d1df82c004712c632bbeac095
 
-PODFILE CHECKSUM: a14efe3ece8fd58ee4ebcd4f75289f21140fc4c5
+PODFILE CHECKSUM: 0dfbafd12a9d82f03ad9c10f4509e66dc79f5f32
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4
