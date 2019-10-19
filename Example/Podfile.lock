@@ -1,22 +1,17 @@
 PODS:
-  - OCWaveView (0.0.3)
+  - OCWaveView (0.1.1)
 
 DEPENDENCIES:
-  - OCWaveView (from `https://github.com/emannuelOC/OCWaveView.git`, tag `0.0.4`)
+  - OCWaveView (from `../`)
 
 EXTERNAL SOURCES:
   OCWaveView:
-    :git: https://github.com/emannuelOC/OCWaveView.git
-    :tag: 0.0.4
-
-CHECKOUT OPTIONS:
-  OCWaveView:
-    :git: https://github.com/emannuelOC/OCWaveView.git
+    :path: "../"
     :tag: 0.0.4
 
 SPEC CHECKSUMS:
-  OCWaveView: ecb20508d6133511a1445517ffe41a410e840e45
+  OCWaveView: fd150f9578a050a568befe5e0f3b56ec7d6835d2
 
-PODFILE CHECKSUM: 0a41998112c8dccbc9c0a7fcbddc311dae5eb624
+PODFILE CHECKSUM: a14efe3ece8fd58ee4ebcd4f75289f21140fc4c5
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.8.3
