@@ -28,7 +28,6 @@ public class WaveView: UIView {
         }
     }
     
-    
     private var spin1 = 0.1
     private var spin2 = 0.6
     private var spin3 = 0.1
@@ -36,6 +35,15 @@ public class WaveView: UIView {
     private var signal1 = 1.0
     private var signal2 = 1.0
     private var signal3 = 1.0
+    
+    public init() {
+        super.init(frame: .zero)
+        backgroundColor = .clear
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     private func updateSpin() {
         
@@ -106,10 +114,11 @@ public class WaveView: UIView {
             for x in 0...Int(frame.width/size) {
                 let newX = CGFloat(x) * size
                 
-                let y = height + value * CGFloat(bowlSenoid.f(newX)) * 0.000002
+                let n = value * CGFloat(bowlSenoid.f(newX)) * 0.000002
+                let y = height + n
                 let point = CGPoint(x: newX, y: y)
                 
-                let mirrorY = height - value * CGFloat(bowlSenoid.f(newX)) * 0.000002
+                let mirrorY = height - n
                 let mirror = CGPoint(x: newX, y: mirrorY)
                 
                 points += [point]
@@ -126,10 +135,8 @@ public class WaveView: UIView {
             
             color.set()
             path1.lineWidth = 1
-            //            path1.stroke()
             path1.fill()
             path2.lineWidth = 1
-            //            path2.stroke()
             path2.fill()
             
         }
@@ -137,90 +144,3 @@ public class WaveView: UIView {
     }
     
 }
-
-public class BowlSenoid {
-    
-    var center: Double
-    
-    var s = 0.0
-    
-    private func senoid(_ x: Double) -> Double {
-        return sin(s + x)
-    }
-    
-    private func bowl(_ x: Double, center: Double = 0) -> Double {
-        let x = abs(x - center)
-        return -x * x + (center * center)
-    }
-    
-    public init(center: Double) {
-        self.center = center
-    }
-    
-    public func f(_ x: Double) -> Double {
-        return bowl(x, center: center) * senoid(x)
-    }
-    
-    public func f(_ x: CGFloat) -> CGFloat {
-        return CGFloat(f(Double(x)))
-    }
-    
-}
-
-extension UIBezierPath
-{
-    func interpolatePointsWithHermite(interpolationPoints : [CGPoint], alpha : CGFloat = 1.0/3.0)
-    {
-        guard !interpolationPoints.isEmpty else { return }
-        self.move(to: interpolationPoints[0])
-        
-        let n = interpolationPoints.count - 1
-        
-        for index in 0..<n
-        {
-            var currentPoint = interpolationPoints[index]
-            var nextIndex = (index + 1) % interpolationPoints.count
-            var prevIndex = index == 0 ? interpolationPoints.count - 1 : index - 1
-            var previousPoint = interpolationPoints[prevIndex]
-            var nextPoint = interpolationPoints[nextIndex]
-            let endPoint = nextPoint
-            var mx : CGFloat
-            var my : CGFloat
-            
-            if index > 0
-            {
-                mx = (nextPoint.x - previousPoint.x) / 2.0
-                my = (nextPoint.y - previousPoint.y) / 2.0
-            }
-            else
-            {
-                mx = (nextPoint.x - currentPoint.x) / 2.0
-                my = (nextPoint.y - currentPoint.y) / 2.0
-            }
-            
-            let controlPoint1 = CGPoint(x: currentPoint.x + mx * alpha, y: currentPoint.y + my * alpha)
-            currentPoint = interpolationPoints[nextIndex]
-            nextIndex = (nextIndex + 1) % interpolationPoints.count
-            prevIndex = index
-            previousPoint = interpolationPoints[prevIndex]
-            nextPoint = interpolationPoints[nextIndex]
-            
-            if index < n - 1
-            {
-                mx = (nextPoint.x - previousPoint.x) / 2.0
-                my = (nextPoint.y - previousPoint.y) / 2.0
-            }
-            else
-            {
-                mx = (currentPoint.x - previousPoint.x) / 2.0
-                my = (currentPoint.y - previousPoint.y) / 2.0
-            }
-            
-            let controlPoint2 = CGPoint(x: currentPoint.x - mx * alpha, y: currentPoint.y - my * alpha)
-            
-            self.addCurve(to: endPoint, controlPoint1: controlPoint1, controlPoint2: controlPoint2)
-        }
-    }
-}
-
-

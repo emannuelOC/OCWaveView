@@ -15,7 +15,7 @@ public class SimpleWaveView: UIView {
     @IBInspectable public var color: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
     
     /// The width of the wave
-    @IBInspectable public var lineWidth: CGFloat = 0.0
+    @IBInspectable public var lineWidth: CGFloat = 1.0
     
     /// The value to be used in the senoid function
     @IBInspectable
@@ -33,6 +33,15 @@ public class SimpleWaveView: UIView {
     private var signal1 = 1.0
     private var signal2 = 1.0
     private var signal3 = 1.0
+    
+    public init() {
+        super.init(frame: .zero)
+        backgroundColor = .clear
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     private func updateSpin() {
         
@@ -67,7 +76,7 @@ public class SimpleWaveView: UIView {
     var s = 0.0
     
     override public func draw(_ rect: CGRect) {
-        
+                
         let height = frame.height/2
         
         let bowlSenoid = BowlSenoid(center: Double(frame.width)/2.0)

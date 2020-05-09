@@ -15,10 +15,10 @@ public class BarsWaveView: UIView {
     @IBInspectable public var color: UIColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
     
     /// The width of each bar
-    @IBInspectable public var lineWidth: CGFloat = 0.0
+    @IBInspectable public var lineWidth: CGFloat = 10.0
     
     /// The amplitude to multiply the size of the bars
-    @IBInspectable public var amplitude: CGFloat = 0.0
+    @IBInspectable public var amplitude: CGFloat = 1.0
     
     /// The value to be used in the senoid function
     @IBInspectable
@@ -36,6 +36,15 @@ public class BarsWaveView: UIView {
     private var signal1 = 1.0
     private var signal2 = 1.0
     private var signal3 = 1.0
+    
+    public init() {
+        super.init(frame: .zero)
+        backgroundColor = .clear
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     private func updateSpin() {
         
@@ -91,7 +100,6 @@ public class BarsWaveView: UIView {
             let newX = CGFloat(x) * size
             let y = height + value * CGFloat(bowlSenoid.f(newX)) * 0.000008
             let path = UIBezierPath()
-            print(y/3)
             path.move(to: CGPoint(x: newX, y: frame.height/2 - (amplitude * 10 + y)/10))
             path.addLine(to: CGPoint(x: newX, y: frame.height/2 + (amplitude * 10 + y)/10))
             paths.append(path)

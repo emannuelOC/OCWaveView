@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OCWaveView.xcodeproj">
+      location = "group:../Example">
+   </FileRef>
+   <FileRef
+      location = "group:../Package.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../README.md">
+   </FileRef>
+   <FileRef
+      location = "group:../Sources">
+   </FileRef>
+   <FileRef
+      location = "group:../Tests">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
