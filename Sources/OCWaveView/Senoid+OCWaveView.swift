@@ -18,6 +18,10 @@ public class BowlSenoid {
         return sin(3 * n) * sin(3 * n) * sin(3 * n) * sin(3 * n)
     }
     
+    fileprivate func simpleSenoid(_ x: Double) -> Double {
+        return sin(s + x)
+    }
+    
     private func bowl(_ x: Double, center: Double = 0) -> Double {
         let x = abs(x - center)
         return -x * x + (center * center)
@@ -33,6 +37,10 @@ public class BowlSenoid {
     
     public func f(_ x: CGFloat) -> CGFloat {
         return CGFloat(f(Double(x)))
+    }
+    
+    public func g(_ x: CGFloat) -> CGFloat {
+        return CGFloat(bowl(Double(x), center: center) * simpleSenoid(Double(x)))
     }
     
 }

@@ -100,7 +100,7 @@ public class SimpleWaveView: UIView {
         for x in 0...Int(frame.width/size) {
             let newX = CGFloat(x) * size
             
-            let y = height + value * CGFloat(bowlSenoid.f(newX)) * 0.000002
+            let y = height + value * CGFloat(bowlSenoid.g(newX)) * 0.000002
             let point = CGPoint(x: newX, y: y)
             
             points += [point]

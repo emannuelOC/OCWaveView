@@ -98,7 +98,7 @@ public class BarsWaveView: UIView {
         
         for x in 0...Int(frame.width/size) {
             let newX = CGFloat(x) * size
-            let y = height + value * CGFloat(bowlSenoid.f(newX)) * 0.000008
+            let y = height + value * CGFloat(bowlSenoid.g(newX)) * 0.000008
             let path = UIBezierPath()
             path.move(to: CGPoint(x: newX, y: frame.height/2 - (amplitude * 10 + y)/10))
             path.addLine(to: CGPoint(x: newX, y: frame.height/2 + (amplitude * 10 + y)/10))
