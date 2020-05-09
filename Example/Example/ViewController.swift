@@ -11,8 +11,6 @@ import OCWaveView
 
 @IBDesignable
 class ViewController: UIViewController {
-
-//    @IBOutlet weak var waveView: WaveView!
     
     lazy var waveView: BarsWaveView = {
         let waveView = BarsWaveView()
