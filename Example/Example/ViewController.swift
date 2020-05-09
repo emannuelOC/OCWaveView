@@ -12,10 +12,9 @@ import OCWaveView
 @IBDesignable
 class ViewController: UIViewController {
     
-    lazy var waveView: BarsWaveView = {
-        let waveView = BarsWaveView()
+    lazy var waveView: WaveView = {
+        let waveView = WaveView()
         waveView.translatesAutoresizingMaskIntoConstraints = false
-        waveView.color = .white
         return waveView
     }()
     

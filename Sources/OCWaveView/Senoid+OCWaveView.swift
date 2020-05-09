@@ -13,8 +13,9 @@ public class BowlSenoid {
     
     var s = 0.0
     
-    private func senoid(_ x: Double) -> Double {
-        return sin(s + x)
+    fileprivate func senoid(_ x: Double) -> Double {
+        let n = s/10 + x
+        return sin(3 * n) * sin(3 * n) * sin(3 * n) * sin(3 * n)
     }
     
     private func bowl(_ x: Double, center: Double = 0) -> Double {

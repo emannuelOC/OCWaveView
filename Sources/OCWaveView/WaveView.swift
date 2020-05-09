@@ -20,6 +20,12 @@ public class WaveView: UIView {
     /// The third color
     @IBInspectable public var color3: UIColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 0.6898812072)
     
+    /// The fourth color
+    @IBInspectable public var color4: UIColor = #colorLiteral(red: 0.6221044504, green: 0.9764705896, blue: 0.7605170776, alpha: 0.6898812072)
+    
+    /// The fifth color
+    @IBInspectable public var color5: UIColor = #colorLiteral(red: 0.9973710658, green: 1, blue: 0.9193857126, alpha: 0.6898812072)
+    
     /// The value to be used in the senoid function
     @IBInspectable
     public var value: CGFloat = 200 {
@@ -31,10 +37,14 @@ public class WaveView: UIView {
     private var spin1 = 0.1
     private var spin2 = 0.6
     private var spin3 = 0.1
+    private var spin4 = 0.1
+    private var spin5 = 0.1
     
     private var signal1 = 1.0
     private var signal2 = 1.0
     private var signal3 = 1.0
+    private var signal4 = 1.0
+    private var signal5 = 1.0
     
     public init() {
         super.init(frame: .zero)
@@ -50,6 +60,8 @@ public class WaveView: UIView {
         let factor1 = 0.65
         let factor2 = 0.41
         let factor3 = 0.7
+        let factor4 = 0.2
+        let factor5 = 0.9
         
         if spin1 >= 1.0 {
             signal1 = -1.0
@@ -72,6 +84,20 @@ public class WaveView: UIView {
         }
         spin3 += signal3 * factor3
         
+        if spin4 >= 1.0 {
+            signal4 = -1.0
+        } else if spin4 <= 0.1 {
+            signal4 = 1.0
+        }
+        spin4 += signal4 * factor4
+        
+        if spin5 >= 1.0 {
+            signal5 = -1.0
+        } else if spin5 <= 0.1 {
+            signal5 = 1.0
+        }
+        spin5 += signal5 * factor5
+        
     }
     
     
@@ -92,8 +118,8 @@ public class WaveView: UIView {
         var points = [CGPoint]()
         var mirrorPoints = [CGPoint]()
         
-        let curveSizes = [20, 24, 25]
-        let colors = [color1, color2, color3]
+        let curveSizes = [40, 50, 32, 30, 19]
+        let colors = [color1, color2, color3, color4, color5]
         
         for i in 0..<curveSizes.count {
             
