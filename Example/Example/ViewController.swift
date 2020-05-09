@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         view.addSubview(waveView)
         
         NSLayoutConstraint.activate([
-            waveView.topAnchor.constraint(equalTo: view.topAnchor),
+            waveView.heightAnchor.constraint(equalToConstant: 200),
             waveView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             waveView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             waveView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     func configureView() {
         let gradient = CAGradientLayer()
         gradient.frame = view.bounds
-        gradient.colors = [#colorLiteral(red: 0.364705890417099, green: 0.0666666701436043, blue: 0.968627452850342, alpha: 1.0), #colorLiteral(red: 0.854901969432831, green: 0.250980406999588, blue: 0.47843137383461, alpha: 1.0)].map({ $0.cgColor })
+        gradient.colors = [#colorLiteral(red: 0.7791045984, green: 0.3612275229, blue: 0.6627439169, alpha: 1), #colorLiteral(red: 0.3250321746, green: 0.2411090732, blue: 0.4993002415, alpha: 1)].map({ $0.cgColor })
         view.layer.insertSublayer(gradient, at: 0)
     }
 
