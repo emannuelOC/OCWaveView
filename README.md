@@ -37,7 +37,7 @@ Add `OCWaveView` to the dependencies value of your `Package.swift`.
 
 ```
 dependencies: [
-    .package(url: "https://github.com/emannuelOC/OCWaveView.git", .upToNextMajor(from: "0.2"))
+.package(url: "https://github.com/emannuelOC/OCWaveView.git", .upToNextMajor(from: "0.2.1"))
 ]
 ```
 

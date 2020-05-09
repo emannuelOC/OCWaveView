@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OCWaveView"
-  s.version      = "0.2"
+  s.version      = "0.2.1"
   s.summary      = "🌊 A UIView subclass to present visual feedback for audio input"
 
   s.description  = "OCWaveView is a UIView subclass that can present visual feedback for audio input."
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.swift_versions = '5.0'
   
-  s.source       = { :git => "https://github.com/emannuelOC/OCWaveView.git", :tag => "0.2" }
+  s.source       = { :git => "https://github.com/emannuelOC/OCWaveView.git", :tag => "0.2.1" }
 
   s.source_files  = "OCWaveView", "Sources/**/*.{h,m,swift}"
 
