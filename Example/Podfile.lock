@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OCWaveView: d5f7061e98dfbe4d1df82c004712c632bbeac095
+  OCWaveView: 22fbba73cca1eb727c1b787a9f08690b937dfda9
 
 PODFILE CHECKSUM: 0dfbafd12a9d82f03ad9c10f4509e66dc79f5f32
 

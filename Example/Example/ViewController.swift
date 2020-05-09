@@ -11,12 +11,25 @@ import OCWaveView
 
 @IBDesignable
 class ViewController: UIViewController {
-
-    @IBOutlet weak var waveView: WaveView!
+    
+    lazy var waveView: WaveView = {
+        let waveView = WaveView()
+        waveView.translatesAutoresizingMaskIntoConstraints = false
+        return waveView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        
+        view.addSubview(waveView)
+        
+        NSLayoutConstraint.activate([
+            waveView.topAnchor.constraint(equalTo: view.topAnchor),
+            waveView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            waveView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            waveView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        ])
     }
     
     override func prepareForInterfaceBuilder() {

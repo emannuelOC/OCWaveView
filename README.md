@@ -31,9 +31,16 @@ Create an outlet and change its `value` property according to the audio input to
 
 ## Instalation
 
-### Manually
+### Swift Package Manager
 
-You can simply copy `OCWaveView.swift` into your project.
+Add `OCWaveView` to the dependencies value of your `Package.swift`.
+
+```
+dependencies: [
+    .package(url: "https://github.com/emannuelOC/OCWaveView.git", .upToNextMajor(from: "0.2"))
+]
+```
+
 
 ### Cocoapods
 
