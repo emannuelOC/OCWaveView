@@ -5,7 +5,7 @@
 //  Created by Emannuel Carvalho on 08/05/20.
 //
 
-import Foundation
+import UIKit
 
 public class BowlSenoid {
     
