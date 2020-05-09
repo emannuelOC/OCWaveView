@@ -13,8 +13,10 @@ Pod::Spec.new do |s|
   s.author             = { "Emannuel Carvalho" => "emannuel.carvalho@icloud.com" }
   s.social_media_url   = "http://twitter.com/emannuel_oc"
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "10.0"
 
+  s.swift_versions = '5.0'
+  
   s.source       = { :git => "https://github.com/emannuelOC/OCWaveView.git", :tag => "0.2" }
 
   s.source_files  = "OCWaveView", "Sources/**/*.{h,m,swift}"
